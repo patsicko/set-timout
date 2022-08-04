@@ -1,7 +1,8 @@
 
 
 
-  
+const myChange=()=>{
+      
     var backgroundImg=["./bag.jpeg","./cart.png","./hat.jpeg","./laptop.jpg","./phone.jpeg","./shoes.jpg"
 ]
 
@@ -42,22 +43,19 @@ const change=()=>{
 list[active].style.backgroundColor="red";
 
 setTimeout(()=>{
-if(active<5){
 active++;
-}
-else{
-active=0;
-active++;
-}
 
 change();
-
 },2000)
 }
 
 change();
+}
 
 
+myChange();
 
 
-
+setInterval(()=>{
+   location.reload();
+},10000)
